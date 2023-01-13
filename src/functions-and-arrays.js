@@ -166,17 +166,19 @@ const wordsUnique = [
 
 function uniquifyArray(wordsArray) {
 
-  if (wordsArray[0] === undefined) {
+  if (wordsArray.length === 0) {
     return null;
   };
 
-  const indexes = [];
-
+  const newArr = [];
+  
   for (let i = 0; i < wordsArray.length; i++) {
-    
+    if (!newArr.includes(wordsArray[i])) {
+      newArr.push(wordsArray[i]);
+    };
   };
 
-  return true;
+  return newArr;
 };
 
 console.log(uniquifyArray(wordsUnique));
