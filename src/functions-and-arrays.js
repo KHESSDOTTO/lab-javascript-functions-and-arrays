@@ -61,7 +61,7 @@ function sum(arr) {
         };
         break;
       default:
-        throw new Error('unsupported data type');
+        throw new Error("Unsupported data type sir or ma'am");
         break;
     };
   };
@@ -171,7 +171,7 @@ function uniquifyArray(wordsArray) {
   };
 
   const newArr = [];
-  
+
   for (let i = 0; i < wordsArray.length; i++) {
     if (!newArr.includes(wordsArray[i])) {
       newArr.push(wordsArray[i]);
